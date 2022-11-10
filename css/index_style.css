@@ -1,0 +1,82 @@
+body{
+    margin: 0 auto;
+}
+
+.container{
+    position: relative;
+    overflow: hidden;
+    height: 87.6%;
+    text-align: center;
+    z-index: 0;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.9) 0%,rgba(0,0,0,0.8) 100%), url('../img/balança-bg.jpg');
+    background-size: cover;
+}
+
+.left h3 {
+    padding: 36px 36px 15px;
+    font-size: 65px;
+    color: var(--white);
+    position: relative;
+    z-index: 1;
+}
+
+.left span{
+    padding: 36px;
+    font-size: 22px;
+    color: var(--helpText);
+    position: relative;
+    z-index: 1;
+    font-weight: lighter;
+    font-family: Montserrat, sans-serif;
+}
+
+.right h4 {
+    font-size: 36px;
+    padding: 36px 36px 3px;
+    color: var(--grey);
+    position: relative;
+    margin-top: 200px;
+    z-index: 1;
+}
+
+.right span{
+    padding: 36px;
+    font-size: 18px;
+    color: var(--helpText);
+    position: relative;
+    z-index: 1;
+    font-weight: lighter;
+    font-family: Montserrat, sans-serif;
+}
+
+.right button{
+    margin-right: 36px;
+    height: 60px;
+    width: 130px;
+    border-radius: 5px;
+    color: var(--white);
+    background-color: var(--helpText);
+    z-index: 1;
+    border: none;
+}
+
+.getStarted:hover{
+    background-color: var(--secondRed);
+    cursor: pointer;
+}
+
+.left{
+    float: left;
+    text-align: left;
+    width: 50%;
+}
+
+.right{
+    float: right;
+    text-align: right;
+    width: 50%;
+}
+
+a{
+    text-decoration: none;
+}

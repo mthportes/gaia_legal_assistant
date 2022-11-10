@@ -1,0 +1,124 @@
+body {
+    font-family: "Lato", sans-serif;
+    margin: 0 auto;
+    transition: .5s;
+
+}
+  
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #4D0916;
+    overflow-x: hidden;
+    padding-top: 60px;
+    text-align: left;
+    transition: 0.1s;
+    overflow-x: hidden;
+    z-index: 3;
+}
+  
+.sidenav a {
+    padding: 8px 8px 8px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: snow;
+    display: block;
+    transition: 0.3s;
+}
+  
+.sidenav a:hover {
+    color: #966e75;
+}
+  
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 5px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+  
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #4D0916;
+}  
+
+.topnav span{
+  margin-top: 20px;
+}
+
+.userAvatar{
+    height: 90px;
+    border-radius: 50%;
+    max-height: 90px;
+    max-width: 90px;
+    margin: auto;
+    margin-top: 14px;
+}
+
+.test{
+  margin-top: 20px !important;
+}
+
+.dropdown {
+  float: right;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.dropdown .dropbtn {
+  border-radius: 50%;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 100px;
+  max-width: fit-content;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  /*transform: translateX(-60px);*/
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+span{
+  margin-top: 20px !important;
+}

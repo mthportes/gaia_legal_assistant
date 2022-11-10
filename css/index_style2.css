@@ -1,0 +1,148 @@
+:root {
+    --firstRed: #4D0916;
+    --secondRed: #5C0B1A;
+    --thirdRed: #690D1D;
+    --helpText: #992238;
+    --white: snow;
+    --grey: grey;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: var(--white);
+}
+
+#msgErro{
+    color: red;
+}
+
+.center{
+    margin: auto;
+    width: 800px;
+    height: 650px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 5px 5px 10px darkgrey;
+}
+.container{
+    display: flex;
+    justify-content: center;
+}
+.left h3 {
+    padding: 76px 36px 0px;
+    font-size: 36px;
+    color: darkgrey;
+    position: relative;
+    z-index: 1;
+}
+
+.left h4 {
+    padding: 36px 36px 1px;
+    font-size: 20px;
+    color: darkgrey;
+    position: relative;
+    z-index: 1;
+}
+
+.left span{
+    padding: 0px 36px;
+    font-size: 15px;
+    color: var(--helpText);
+    position: relative;
+    z-index: 1;
+    font-weight: lighter;
+    font-family: Montserrat, sans-serif;
+}
+
+.left button{
+    margin-left: 36px;
+    height: 60px;
+    width: 130px;
+    border-radius: 5px;
+    color: darkgrey;
+    background-color: var(--helpText);
+    z-index: 1;
+    border: none;
+}
+
+.getStarted:hover{
+    background-color: var(--secondRed);
+    color: white;
+    cursor: pointer;
+}
+
+.left{
+    float: left;
+    text-align: initial;
+    width: 55%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.8) 100%), url('../img/balança-bg.jpg');
+    background-size: cover;
+}
+
+.right{
+    float: right;
+    height: 100%;
+    background-color: white;
+    width: 45%;
+}
+
+a{
+    text-decoration: none;
+}
+
+form{
+    margin-top: 50%;
+}
+input[type=text], input[type=password]{
+    width: 70%;
+    height: 50px;
+    padding-left: 10px;
+    border: none;
+    border-bottom: 3px var(--thirdRed) solid;
+    background-color: white;
+    border-radius: 5px;
+}
+
+input[type=text]:hover, input[type=password]:hover{
+    cursor: pointer;
+    background-color: var(--white);
+}
+
+input[type=text]:focus, input[type=password]:focus{
+    cursor: pointer;
+    border: 3px var(--thirdRed) solid;
+    background-color: var(--white);
+}
+
+input[type=submit]{
+    width: 250px;
+    height: 35px;
+    border-radius: 5px;
+    border: none;
+}
+input[type=submit]:hover{
+    cursor: pointer;
+    background-color: var(--firstRed);
+    color: white;
+}
+
+.registerButton{
+    color: white;
+    background-color: var(--thirdRed);
+}
+
+.loginButton{
+    background-color: mediumseagreen;
+    color: white;
+}
+
+.registerLink{
+    color: var(--thirdRed);
+}
